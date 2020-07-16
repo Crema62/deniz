@@ -1,1 +1,1 @@
-# deniz
+gg.alert("WELCOME")
