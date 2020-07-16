@@ -17,3 +17,403 @@ else
 gg.alert("Passwors is incorrect")
 end
 
+gg.sleep(0)
+menuk = 1
+
+if gg.isVisible(true) then
+  gg.setVisible(false)
+end
+
+--Radar
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("0360A0E3010050E3r", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+--[[ found: 1 ]]
+gg.getResults(1)
+--[[ count: 1 ]]
+e = gg.getResults(1)
+gg.addListItems(e)
+gg.clearResults()
+
+on = '[OFF] '
+off = '[ON] '
+radar = off
+
+
+
+
+--Hitbox
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("00000000r;1EFF2FE1r;F04F2DE9r;1CB08DE2r;068B2DEDr;08708BE2r", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+--[[ found: 6 ]]
+gg.refineNumber("0", gg.TYPE_DWORD)
+--[[ found: 1 ]]
+gg.getResults(1)
+--[[ count: 1 ]]
+a = gg.getResults(1)
+gg.addListItems(a)
+gg.clearResults()
+
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("0700A0E10010A0E3r;010050E33800001Ar;104A08EE144097E5r", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+--[[ found: 4 ]]
+gg.refineNumber("010050E33800001Ar", gg.TYPE_QWORD)
+--[[ found: 1 ]]
+gg.getResults(1)
+--[[ count: 1 ]]
+b = gg.getResults(1)
+gg.addListItems(b)
+gg.clearResults()
+
+on = '[OFF] '
+off = '[ON] '
+hitbox = off
+
+
+--Bitbox
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("00000000r;1EFF2FE1r;F04F2DE9r;1CB08DE2r;068B2DEDr;08708BE2r", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("0", gg.TYPE_DWORD)
+c = gg.getResults(1)
+gg.addListItems(c)
+gg.clearResults()
+
+
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("0700A0E10010A0E3r;010050E33800001Ar;104A08EE144097E5r", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("010050E33800001Ar", gg.TYPE_QWORD)
+d = gg.getResults(1)
+gg.addListItems(d)
+gg.clearResults()
+
+
+
+on = '[OFF] '
+off = '[ON] '
+bitbox = off
+
+
+
+--Spread
+gg.clearResults()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("1.0e-6F;360.0F;3.14159274101F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+--[[ found: 3 ]]
+gg.refineNumber("3.14159274101F", gg.TYPE_FLOAT)
+--[[ found: 1 ]]
+gg.getResults(1)
+--[[ count: 1 ]]
+f = gg.getResults(1)
+gg.addListItems(f)
+gg.clearResults()
+
+on = '[OFF] '
+off = '[ON] '
+spread = off
+
+--Stars
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("98;44;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+--[[ found: 11 ]]
+gg.getResults(100)
+--[[ count: 11 ]]
+gg.processResume()
+gg.searchNumber("44", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+--[[ found: 2 ]]
+gg.getResults(100)
+--[[ count: 2 ]]
+g = gg.getResults(1)
+gg.addListItems(g)
+gg.clearResults()
+
+on = '[OFF] '
+off = '[ON] '
+stars = off
+
+
+--aim
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("028BBDEC3048BDE8r;F0482DE910B08DE2r;068B2DED38D04DE2r", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+--[[ found: 3 ]]
+gg.refineNumber("F0482DE910B08DE2r", gg.TYPE_QWORD)
+--[[ found: 1 ]]
+gg.getResults(1)
+--[[ count: 1 ]]
+h = gg.getResults(100)
+gg.addListItems(h)
+gg.clearResults()
+
+on = '[OFF] '
+off = '[ON] '
+aim = off
+
+
+
+
+--fire
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("00007042r;0010A0E1r;0100A0E3r;000052E3r;104C2DE9r;08B08DE2r;000054E3r", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber('00007042r', gg.TYPE_DWORD)
+i = gg.getResults(1)
+gg.addListItems(i)
+gg.clearResults()
+
+
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("33FF2FE1r;00007042r;0100A0E3r;000050E3r;0000A0E3r;0050A0E1r;000055E3r;0000A0E3r", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber('00007042r', gg.TYPE_DWORD)
+j = gg.getResults(1)
+gg.addListItems(j)
+gg.clearResults()
+
+
+on = '[OFF] '
+off = '[ON] '
+fire = off
+
+
+--smoke
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("0AD7233Cr;00007F43r;00000000r;F04F2DE9r;10D04DE2r;0060A0E1r;000057E3r;0050A0E3r", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber('0AD7233Cr', gg.TYPE_DWORD)
+k = gg.getResults(4)
+gg.addListItems(k)
+gg.clearResults()
+
+
+on = '[OFF] '
+off = '[ON] '
+smoke = off
+
+
+
+function START()
+
+local menu = gg.multiChoice({
+radar.. 'Radar',
+hitbox.. 'Hitbox (Head)',
+bitbox.. 'Hitbox (Body)',
+stars.. 'Hide Stars',
+fire.. 'Fire Rate (Only Pistol)',
+spread.. 'No Spread',
+smoke.. 'No Smoke',
+aim.. 'No Aimpunch',
+'❌EXIT❌'},
+nil,
+'💏TEAM CREMA💏')
+
+if menu == nil then noselect()
+else
+if menu[9] then exit()
+else
+if menu[1] then
+if radar == on then
+radar = off
+gg.getListItems(e)
+e[1].value = '0360A0E3010050E3r'
+gg.setValues(e)
+gg.toast('Radar OFF')
+else
+radar = on
+gg.getListItems(e)
+e[1].value =  '0360A0E3030050E3r'
+gg.setValues(e)
+gg.toast('Radar ON')
+end
+end
+
+
+if menu[2] then
+if hitbox == on then
+hitbox = off
+gg.getListItems(a)
+a[1].value =  '00000000r'
+gg.setValues(a)
+gg.getListItems(b)
+b[1].value =  '010050E33800001Ar'
+gg.setValues(b)
+gg.toast('Hitbox Head OFF')
+else
+hitbox = on
+gg.getListItems(a)
+a[1].value =  '00009841r'
+gg.setValues(a)
+gg.getListItems(b)
+b[1].value =  '000050E33800001Ar'
+gg.setValues(b)
+gg.toast('Hitbox Head ON')
+end
+end
+
+
+if menu[3] then
+if bitbox == on then
+bitbox = off
+gg.getListItems(c)
+c[1].value =  '00000000r'
+gg.setValues(c)
+gg.getListItems(d)
+d[1].value =  '010050E33800001Ar'
+gg.setValues(d)
+gg.toast('Hitbox Body OFF')
+else
+bitbox = on
+gg.getListItems(c)
+c[1].value =  '1,068,200,512'
+gg.setValues(c)
+gg.getListItems(d)
+d[1].value =  '000050E33800001Ar'
+gg.setValues(d)
+gg.toast('Hitbox Body ON')
+end
+end
+
+if menu[6] then
+if spread == on then
+spread = off
+gg.getListItems(f)
+f[1].value = '0'
+gg.setValues(f)
+gg.toast('No Spread OFF')
+else
+spread = on
+gg.getListItems(f)
+f[1].value =  '3.14159274101F'
+gg.setValues(f)
+gg.toast('No Spread ON')
+end
+end
+
+
+if menu[4] then
+if stars == on then
+stars = off
+gg.getListItems(g)
+g[1].value = '44'
+gg.setValues(g)
+gg.toast(' Hiding  Stars OFF')
+else
+stars = on
+gg.getListItems(g)
+g[1].value =  '999999'
+gg.setValues(g)
+gg.toast('Hiding  Stars ON')
+end
+end
+
+
+if menu[8] then
+if aim == on then
+aim = off
+gg.getListItems(h)
+h[1].value = 'F0482DE910B08DE2r'
+gg.setValues(h)
+gg.toast('No Aimpunch OFF')
+else
+aim = on
+gg.getListItems(h)
+h[1].value = '00F020E31EFF2FE1r'
+gg.setValues(h)
+gg.toast('No AimPunch ON')
+end
+end
+
+
+
+if menu[5] then
+if fire == on then
+fire = off
+gg.getListItems(i)
+i[1].value =  '00007042r'
+gg.setValues(i)
+gg.getListItems(j)
+j[1].value =  '00007042r'
+gg.setValues(j)
+gg.toast('Fire Rate OFF')
+else
+fire = on
+gg.getListItems(i)
+i[1].value =  '00005C42r'
+gg.setValues(i)
+gg.getListItems(j)
+j[1].value =  '00000C42r'
+gg.setValues(j)
+gg.toast('Fire Rate ON')
+end
+end
+
+
+
+if menu[7] then
+if smoke == on then
+smoke = off
+gg.getListItems(k)
+k[1].value = '0AD7233Cr'
+k[2].value = '0AD7233Cr'
+k[3].value = '0AD7233Cr'
+k[4].value = '0AD7233Cr'
+gg.setValues(k)
+gg.setValues(k)
+gg.setValues(k)
+gg.setValues(k)
+gg.toast('No Smoke OFF')
+else
+smoke = on
+gg.getListItems(k)
+k[1].value = '000010C1r'
+k[2].value = '000010C1r'
+k[3].value = '000010C1r'
+k[4].value = '000010C1r'
+gg.setValues(k)
+gg.setValues(k)
+gg.setValues(k)
+gg.setValues(k)
+gg.toast('No Smoke ON')
+end
+end
+
+
+
+end
+end
+menuk =-1
+end
+
+function noselect()
+gg.toast('🌟 BY CREMA 🌟')
+end
+
+function exit()
+gg.removeListItems(a)
+print([[                                                                    
+👑👑👑👑👑👑👑👑👑👑👑👑👑👑👑
+👑👑👑👑👑👑👑👑👑👑👑👑👑👑👑
+👑👑💎 T   E   A  M    C  R  E M  A 💎👑👑
+👑👑💎 T   E   A  M    C  R  E M  A 💎👑👑
+👑👑💎 T   E   A  M    C  R  E M  A 💎👑👑
+👑👑💎 T   E   A  M    C  R  E M  A 💎👑👑
+👑👑💎 T   E   A  M    C  R  E M  A 💎👑👑
+👑👑💎 T   E   A  M    C  R  E M  A 💎👑👑
+👑👑💎 T   E   A  M    C  R  E M  A 💎👑👑
+👑👑💎 T   E   A  M    C  R  E M  A 💎👑👑
+👑👑💎 T   E   A  M    C  R  E M  A 💎👑👑
+👑👑💎 T   E   A  M    C  R  E M  A 💎👑👑
+👑👑💎 T   E   A  M    C  R  E M  A 💎👑👑
+👑👑💎 T   E   A  M    C  R  E M  A 💎👑👑
+👑👑💎 T   E   A  M    C  R  E M  A 💎👑👑
+👑👑👑👑👑👑👑👑👑👑👑👑👑👑👑
+👑👑👑👑👑👑👑👑👑👑👑👑👑👑👑
+ ]]) 
+os.exit()
+end
+
+START()
+
+while (true) do
+  if gg.isVisible(true) then
+    gg.setVisible(false)
+	menuk = 1
+  end
+if menuk == 1 then START() end
+end
+
+
