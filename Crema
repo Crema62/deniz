@@ -1,1 +1,19 @@
-.
+username = "62"
+Result=gg.prompt({"Username"})
+if Result [1] == username then
+gg.alert("Username is correct")
+
+else
+gg.alert("Username is incorrect")
+end
+
+
+password = "123"
+Result=gg.prompt({"Password"})
+if Result [1] == password then
+gg.alert("Password is correct")
+
+else
+gg.alert("Passwors is incorrect")
+end
+
