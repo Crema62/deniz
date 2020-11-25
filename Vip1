@@ -66,8 +66,8 @@ local t = gg.multiChoice({
 'FOV',
 'Lag Hack',
 'EXIT'},
-nil,[[ 馃憫Team Crema馃憫
-鈻獵ritical Ops 1.21 (64bit) Script ]])
+nil,[[ 👑Team Crema👑
+Critical Ops 1.21 (64bit) Script ]])
 if t == nil then gg.sleep(1)
 else
 if t[1] then hacka() end
@@ -295,11 +295,11 @@ end
 
 
 function Exit()
-print([[馃嚚馃嚧馃嚦馃嚬馃嚘馃嚚馃嚬
-猬団瑖猬団瑖猬団瑖猬団瑖猬�
-鉃outube: Team Crema
-鉃iscord: https://discord.gg/KasJeYm
-鉃ame Guardian: Crema                     ]])
+print([[🇨🇴🇳🇹🇦🇨🇹
+⬇⬇⬇⬇⬇⬇⬇⬇⬇
+➡Youtube: Team Crema
+➡Discord: https://discord.gg/KasJeYm
+➡Game Guardian: Crema                     ]])
 os.exit()
 end
 
