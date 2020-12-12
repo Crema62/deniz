@@ -56,16 +56,16 @@ gg.alert('Before The Critical Force Text Appears, Put The Game in The Background
 
 function Main()
 local t = gg.multiChoice({
-'Radar',
-'Hitbox',
-'No Flash',
-'No Spread',
-'Fire Rate',
-'No Recoil',
-'No Aimpunch',
-'FOV',
-'Lag Hack',
-'EXIT'},
+'▫Radar',
+'▫Hitbox',
+'▫No Flash',
+'▫No Spread',
+'▫Fire Rate',
+'▫No Recoil',
+'▫No Aimpunch',
+'▫FOV',
+'▫Lag Hack',
+'❌EXIT❌'},
 nil,[[ 👑Team Crema Vip Script👑
 ✅Game: Critical Ops
 ✅Version: 1.22.0.f1268
