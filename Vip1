@@ -66,7 +66,7 @@ local t = gg.multiChoice({
 'FOV',
 'Lag Hack',
 'EXIT'},
-nil,[[ 👑Team Crema Vip Sript👑
+nil,[[ 👑Team Crema Vip Script👑
 ✅Game: Critical Ops
 ✅Version: 1.22.0.f1268
 ✅Bit: 64 Bit ]])
