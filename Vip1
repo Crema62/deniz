@@ -3,7 +3,7 @@ PW = gg.prompt({'Username: '},{[1]=''},{[1]='text'})
 if not PW then return
 end 
 if PW[1] == "" then gg.alert("Username Can Not Be Empty") os.exit() end
-if PW[1] =="Deniz" then 
+if PW[1] =="drdrake22" then 
 	gg.toast('Username correct!')
 else 
 gg.alert("Username False") return end
@@ -13,7 +13,7 @@ PW = gg.prompt({'Password: '},{[1]=''},{[1]='text'})
 if not PW then return
 end 
 if PW[1] == "" then gg.alert("Password Can Not Be Empty") os.exit() end
-if PW[1] =="1111" then 
+if PW[1] =="Tyronne2" then 
 	gg.toast('Password correct!')
 else 
 gg.alert("Password False") return end
