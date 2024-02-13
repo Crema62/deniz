@@ -1,5 +1,5 @@
 
-print("By Team Crema") PW = gg.prompt({'Username: '},{[1]=''},{[1]='text'}) if not PW then return end if PW[1] == "" then gg.alert("Username Can Not Be Empty 鉂�") os.exit() end if PW[1] =="Deniz" then 	gg.toast('Username correct!') else gg.alert("Username False") return end PW = gg.prompt({'Password: '},{[1]=''},{[1]='text'}) if not PW then return end if PW[1] == "" then gg.alert("Password Can Not Be Empty 鉂�") os.exit() end if PW[1] =="1111" then 	gg.toast('Password correct!') else gg.alert("Password False") return end
+print("By Team Crema") PW = gg.prompt({'Username: '},{[1]=''},{[1]='text'}) if not PW then return end if PW[1] == "" then gg.alert("Username Can Not Be Empty 鉂�") os.exit() end if PW[1] "Vex" then 	gg.toast('Username correct!') else gg.alert("Username False") return end PW = gg.prompt({'Password: '},{[1]=''},{[1]='text'}) if not PW then return end if PW[1] == "" then gg.alert("Password Can Not Be Empty 鉂�") os.exit() end if PW[1] =="1337" then 	gg.toast('Password correct!') else gg.alert("Password False") return end
 
 
 
